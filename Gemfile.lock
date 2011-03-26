@@ -1,0 +1,73 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    addressable (2.2.4)
+    builder (3.0.0)
+    columnize (0.3.2)
+    data_objects (0.10.3)
+      addressable (~> 2.1)
+    dm-core (1.1.0)
+      addressable (~> 2.2.4)
+    dm-do-adapter (1.1.0)
+      data_objects (~> 0.10.2)
+      dm-core (~> 1.1.0)
+    dm-migrations (1.1.0)
+      dm-core (~> 1.1.0)
+    dm-postgres-adapter (1.1.0)
+      dm-do-adapter (~> 1.1.0)
+      do_postgres (~> 0.10.2)
+    dm-sqlite-adapter (1.1.0)
+      dm-do-adapter (~> 1.1.0)
+      do_sqlite3 (~> 0.10.2)
+    dm-timestamps (1.1.0)
+      dm-core (~> 1.1.0)
+    dm-validations (1.1.0)
+      dm-core (~> 1.1.0)
+    do_postgres (0.10.3)
+      data_objects (= 0.10.3)
+    do_sqlite3 (0.10.3)
+      data_objects (= 0.10.3)
+    haml (3.0.25)
+    linecache (0.43)
+    rack (1.2.2)
+    rack-flash (0.1.1)
+      rack
+    ruby-debug (0.10.4)
+      columnize (>= 0.1)
+      ruby-debug-base (~> 0.10.4.0)
+    ruby-debug-base (0.10.4)
+      linecache (>= 0.3)
+    rufus-tokyo (1.0.7)
+    sinatra (1.2.1)
+      rack (~> 1.1)
+      tilt (< 2.0, >= 1.2.2)
+    sinatra-authentication (0.4.1)
+      dm-core
+      dm-migrations
+      dm-timestamps
+      dm-validations
+      rack-flash
+      rufus-tokyo
+      sinatra
+      sinbook
+    sinbook (0.1.9)
+      yajl-ruby
+    tilt (1.2.2)
+    twiliolib (2.0.7)
+      builder (>= 2.1.2)
+    yajl-ruby (0.8.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  dm-core
+  dm-migrations
+  dm-postgres-adapter
+  dm-sqlite-adapter
+  haml
+  rack-flash
+  ruby-debug
+  sinatra
+  sinatra-authentication
+  twiliolib

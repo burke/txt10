@@ -1,0 +1,1 @@
+APP_ENV=development DATABASE_URL=sqlite3:///Users/burke/src/b/txt10/test.db TWILIO_SID=ACbf5e721f6486336df48495ced61d1783 TWILIO_TOKEN=0426b8b9bb91cc5c1e7ebea55a09b82e rackup -p 1233
